@@ -1,0 +1,108 @@
+ /* Reset básico */
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+   background-color: #f5f7fa;
+   padding: 20px;
+   color: #333;
+ }
+
+ h1 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #ffd900;
+ }
+
+ /* Contenedor del buscador */
+ .search-container {
+   max-width: 500px;
+   margin: 0 auto 40px auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+
+ .form-search {
+   display: flex;
+   gap: 10px;
+ }
+
+ .boton-submit {
+   width: 100px;
+   padding: 10px 25px;
+   background-color: #28a745;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background 0.3s;
+ }
+
+ .search-container input[type="text"] {
+   width: 100%;
+   padding: 12px 20px;
+   border: 2px solid #3498db;
+   border-radius: 30px;
+   font-size: 16px;
+   transition: border-color 0.3s ease;
+ }
+
+ .search-container input[type="text"]:focus {
+   outline: none;
+   border-color: #2980b9;
+   box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+ }
+
+ /* Contenedor de productos */
+ .products {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 20px;
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+
+ /* Cada producto */
+ .product-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   width: 100%;
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+ }
+
+ .product-card:hover {
+
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ }
+
+
+ .product-name {
+   font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 8px;
+   color: #34495e;
+ }
+
+ .product-price {
+   color: #27ae60;
+   font-weight: 700;
+   font-size: 16px;
+ }
+
+ .product-image {
+   margin: auto
+ }

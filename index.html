@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Productos con Buscador</title>
+    <link rel="stylesheet" href="./index.css">
+    <script async src="./index.js"></script>
+</head>
+
+<body>
+
+    <h1>MercadoLibre</h1>
+<!-- Creamos un form  para poder realizar las busquedas -->
+    <div class="search-container">
+
+        <form class="form-search">
+            <input type="text" name="search" id="search" placeholder="Busca un producto..." />
+            <Button type="submit" class="boton-submit"> Buscar</Button>
+
+        </form>
+    </div>
+
+    <div class="products" id="products">
+        <!-- Los productos se insertarán aquí dinámicamente -->
+    </div>
+
+    <!-- Creamos la plantilla   -->
+    <template id="template-productos">
+        <div class="product-card">
+            <img class="product-image" src="" alt="Producto" />
+            <div class="product-name"></div>
+            <div class="product-price"></div>
+        </div>
+    </template>
+    <!-- creamos la plantilla  -->
+</body>
+
+</html>
